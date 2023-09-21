@@ -9,21 +9,21 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *nodenew;
+	list_t *new;
 	unsigned int len = 0;
 
 	while (str[len])
 		len++;
-	nodenew = malloc(sizeof(list_t));
-	if (nodenew == NULL)
+	new = malloc(sizeof(list_t));
+	if (new == NULL)
 		return (NULL);
-	nodenew->str = strdup(str);
+	new->str = strdup(str);
 
-		if (nodenew == NULL)
+		if (new == NULL)
 			return (NULL);
-		nodenew->next = *head;
-		nodenew->len = len;
-		*head = nodenew;
+		new->next = *head;
+		new->len = len;
+		*head = new;
 
 		return (*head);
 }
