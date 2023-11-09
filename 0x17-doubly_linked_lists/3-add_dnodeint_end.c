@@ -1,10 +1,9 @@
 #include "lists.h"
 
 /**
- * add_dnodeint_end - adds a new node at the end
- * of a dlistint_t list
- * @head: head of the list
- * @n: value of the element
+ * add_dnodeint_end - adds a new node at the end of a list
+ * @head: an address to a pointer of head of the list
+ * @n: value
  * Return: the address of the new element or NULL if it fails
  */
 
